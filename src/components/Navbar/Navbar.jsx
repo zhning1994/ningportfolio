@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
@@ -13,10 +14,10 @@ const Navbar = () => {
             <li>Home</li>
             <li>Experience</li>
             <li>Portfolio</li>
-            <li>Future Plan</li>
+            <li>Future Studies</li>
           </ul>
         </div>
-        <button className="button">Contact Me</button>
+        <button className="btn-contact">Contact Me</button>
       </div>
     </div>
   );
