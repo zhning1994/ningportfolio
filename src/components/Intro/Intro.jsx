@@ -1,7 +1,7 @@
 import React from 'react';
 import './Intro.css';
 import Github from '../../images/github.png';
-import Facebook from '../../images/facebook (2).png';
+import Facebook from '../../images/facebook2.png';
 import LinkedIn from '../../images/linkedin.png';
 import Instagram from '../../images/instagram.png';
 import Vector1 from '../../images/Vector1.png';
@@ -13,6 +13,8 @@ import css3 from '../../images/css.png';
 import reactLogo from '../../images/react.png';
 import book from '../../images/book.png';
 import deeplearning from '../../images/deep-learning.png';
+import FloatingDiv from '../FloatingDiv/FloatingDiv';
+import WebDev from '../../images/online-lesson.png';
 
 const Intro = () => {
   return (
@@ -40,10 +42,25 @@ const Intro = () => {
         <img src={Vector2} alt="vector2" />
         <img src={Vector3} alt="vector3" />
         <img src={boy} alt="boy" />
-        <img className="i-book" src={book} alt="book" />
-        <img className="i-jsLogo" src={jsLogo} alt="jsLogo" />
-        <img className="i-css3" src={css3} alt="css3" />
-        <img className="i-react" src={reactLogo} alt="react" />
+        <img className="i-jsLogo" src={jsLogo} alt="JSLogo" />
+        <div style={{ top: '-4%', left: '68%' }}>
+          <FloatingDiv img={WebDev} text1="Frontend" text2="Developer" />
+        </div>
+        <div style={{ top: '23rem', left: '0rem' }}>
+          <FloatingDiv img={deeplearning} text1="Frontend" text2="Developer" />
+        </div>
+        <div
+          className="blur"
+          style={{ background: 'rgba(102, 176, 241, 0.2)' }}></div>
+        <div
+          className="blur"
+          style={{
+            background: 'rgba(244, 187, 111, 0.8)',
+            top: '17rem',
+            width: '21rem',
+            height: '11rem',
+            left: '-9rem',
+          }}></div>
       </div>
     </div>
   );

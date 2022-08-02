@@ -111,18 +111,22 @@
   transform: scale(1.4);
 }
 
-.i-book {
-  height: 30px;
-}
-
 .i-jsLogo {
-  height: 30px;
+  transform: scale(0.15);
+  top: -45%;
+  left: -35%;
+  padding: 0;
 }
 
-.i-css3 {
-  height: 30px;
-}
-
-.i-react {
-  height: 30px;
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background-color: rgb(245, 223, 196);
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
 }
