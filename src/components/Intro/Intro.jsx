@@ -9,9 +9,6 @@ import Vector2 from '../../images/Vector2.png';
 import Vector3 from '../../images/Vector3.png';
 import boy from '../../images/boy.png';
 import jsLogo from '../../images/javascript.png';
-import css3 from '../../images/css.png';
-import reactLogo from '../../images/react.png';
-import book from '../../images/book.png';
 import deeplearning from '../../images/deep-learning.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import WebDev from '../../images/online-lesson.png';
@@ -43,15 +40,18 @@ const Intro = () => {
         <img src={Vector3} alt="vector3" />
         <img src={boy} alt="boy" />
         <img className="i-jsLogo" src={jsLogo} alt="JSLogo" />
-        <div style={{ top: '-4%', left: '68%' }}>
-          <FloatingDiv img={WebDev} text1="Frontend" text2="Developer" />
+        <div style={{ top: '-4%', left: '58%' }}>
+          <FloatingDiv img={WebDev} text1="Frontend" text2="Development" />
         </div>
         <div style={{ top: '23rem', left: '0rem' }}>
-          <FloatingDiv img={deeplearning} text1="Frontend" text2="Developer" />
+          <FloatingDiv img={deeplearning} text1="Backend" text2="Development" />
         </div>
         <div
           className="blur"
-          style={{ background: 'rgba(102, 176, 241, 0.2)' }}></div>
+          style={{
+            background: 'rgba(102, 176, 241, 0.2)',
+            top: '3rem',
+          }}></div>
         <div
           className="blur"
           style={{
