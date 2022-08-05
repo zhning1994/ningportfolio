@@ -12,6 +12,7 @@ const Navbar = () => {
         <div className="n-list">
           <ul>
             <li>Home</li>
+            <li>About Me</li>
             <li>Experience</li>
             <li>Portfolio</li>
             <li>Future Studies</li>
