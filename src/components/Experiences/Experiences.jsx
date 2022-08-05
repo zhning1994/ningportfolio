@@ -17,10 +17,9 @@ const Experiences = () => {
           design tools.
           <br />
           <br />
-          Check out
-          <a href="/"> more details </a> about my skills and experience.
+          Check out more details about my skills and experience.
         </span>
-        <button className="btn-download">Download CV</button>
+        <button className="btn-skills">Experience Details</button>
         <div
           className="exp-blur"
           style={{
@@ -36,7 +35,7 @@ const Experiences = () => {
           <Card
             emoji={reactLogo}
             heading="Frontend Skills"
-            detail="HTML5, CSS3, SASS, ES6, ReactJS, NextJS, StorybookJS, TypeScript"
+            detail="HTML5, CSS3, SASS, TailwindCSS, ES6, ReactJS, NextJS, StorybookJS, TypeScript"
           />
         </div>
         <div style={{ top: '20rem', left: '15rem' }}>
