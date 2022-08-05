@@ -43,7 +43,7 @@ const Intro = () => {
         <div style={{ top: '-4%', left: '58%' }}>
           <FloatingDiv img={WebDev} text1="Frontend" text2="Development" />
         </div>
-        <div style={{ top: '23rem', left: '0rem' }}>
+        <div style={{ top: '25rem', left: '7rem' }}>
           <FloatingDiv img={deeplearning} text1="Backend" text2="Development" />
         </div>
         <div

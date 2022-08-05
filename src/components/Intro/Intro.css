@@ -107,8 +107,9 @@
 }
 
 .i-right > :nth-child(4) {
-  left: 28%;
-  transform: scale(1.4);
+  bottom: -6%;
+  left: -16%;
+  transform: scale(0.7);
 }
 
 .i-jsLogo {
