@@ -21,11 +21,12 @@
 .c-text > :nth-child(2) {
   color: #001e6c;
   font-weight: 400px;
-  font-size: 3.3rem;
+  font-size: 1.2rem;
   font-family: 'Lato', sans-serif;
   text-align: justify;
   line-height: 1.5rem;
   margin-top: 2rem;
+  width: 25rem;
 }
 
 .c-right {

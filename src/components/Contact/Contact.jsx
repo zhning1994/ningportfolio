@@ -33,7 +33,11 @@ const Contact = () => {
         <div className="c-text">
           {/* darkMode */}
           <span>Get in Touch</span>
-          <span>Contact me</span>
+          <span>
+            Welcome to email me if you have anything want to share or discuss
+            with me, whether it is about jobs, technology trend, development
+            tips. I am open to any opportunity.
+          </span>
           <div
             className="blur s-blur1"
             style={{ background: '#ABF1FF94' }}></div>
