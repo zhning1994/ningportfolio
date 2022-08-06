@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Intro.css';
 import Github from '../../images/github.png';
 import Facebook from '../../images/facebook2.png';
@@ -12,15 +12,18 @@ import jsLogo from '../../images/javascript.png';
 import deeplearning from '../../images/deep-learning.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import WebDev from '../../images/online-lesson.png';
+import { themeContext } from '../../Context';
 
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
           <span>I am Zhen Ning ! </span>
           <span>Welcome To My Page</span>
-          <span>
+          <span style={{ color: darkMode ? '#93a397' : '' }}>
             A freshman in tech field, on the road of becoming frontend
             developer. Enthusiastic in learning new things, work hard to sharpen
             my skills. Stay hungry, stay foolish.
@@ -28,10 +31,30 @@ const Intro = () => {
         </div>
         <button className="i-button">Hire Me</button>
         <div className="i-icons">
-          <img src={Github} alt="Github" />
-          <img src={Facebook} alt="Facebook" />
-          <img src={LinkedIn} alt="LinkedIn" />
-          <img src={Instagram} alt="Instagram" />
+          <a
+            href="https://github.com/zhning1994"
+            target="_blank"
+            rel="noreferrer">
+            <img src={Github} alt="Github" />
+          </a>
+          <a
+            href="https://www.facebook.com/laurence.low.3/"
+            target="_blank"
+            rel="noreferrer">
+            <img src={Facebook} alt="Facebook" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/zhen-ning-low/"
+            target="_blank"
+            rel="noreferrer">
+            <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.instagram.com/laurencelzg/"
+            target="_blank"
+            rel="noreferrer">
+            <img src={Instagram} alt="Instagram" />
+          </a>
         </div>
       </div>
       <div className="i-right">
