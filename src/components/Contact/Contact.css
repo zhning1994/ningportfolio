@@ -48,10 +48,11 @@
   height: 2rem;
   padding: 0.3em;
   outline: none;
-  border: 2px solid transparent;
+  border: 2px solid #fca71f41;
   border-radius: 8px;
   font-size: 16px;
   transition: all 0.4s ease;
+  background-color: transparent;
 }
 
 textarea {
@@ -94,5 +95,5 @@ textarea {
   z-index: -9;
   top: -18%;
   left: 56%;
-  filter: blur(115px);
+  filter: blur(165px);
 }
