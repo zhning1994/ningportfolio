@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Portfolio.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -6,11 +6,14 @@ import chatapp from '../../images/chatapp.PNG';
 import jupiter from '../../images/Jupiter.PNG';
 import medium from '../../images/Medium.PNG';
 import videocall from '../../images/VideoCall.PNG';
+import { themeContext } from '../../Context';
 
 const Portfolio = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="portfolio">
-      <span>Recent Projects</span>
+      <span style={{ color: darkMode ? '#93a397' : '' }}>Recent Projects</span>
       <span>Portfolio</span>
 
       <Swiper

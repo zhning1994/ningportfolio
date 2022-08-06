@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Experiences.css';
 import nodejs from '../../images/nodejs.png';
 import reactLogo from '../../images/react.png';
 import book from '../../images/book.png';
 import Card from '../Card/Card';
+import { themeContext } from '../../Context';
 
 const Experiences = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="skills ">
       <div className="skills-left">
         <span>My Experience &amp; Skills</span>
-        <span>
+        <span style={{ color: darkMode ? '#93a397' : '' }}>
           I have learnt HTML5, CSS3, ES6, Adobe Xd, Next.js and many more in
           these few year in self-taught way, whether it is about frontend
           development fundamental, backend database setup, or user interface
