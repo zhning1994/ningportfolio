@@ -5,10 +5,12 @@ import reactLogo from '../../images/react.png';
 import book from '../../images/book.png';
 import Card from '../Card/Card';
 import { themeContext } from '../../Context';
+import { motion } from 'framer-motion';
 
 const Experiences = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const transition = { duration: 3, type: 'spring' };
   return (
     <div className="skills ">
       <div className="skills-left">
@@ -34,27 +36,36 @@ const Experiences = () => {
           }}></div>
       </div>
       <div className="skills-right">
-        <div style={{ left: '11rem' }}>
+        <motion.div
+          initial={{ left: '30rem' }}
+          whileInView={{ left: '11rem' }}
+          transition={transition}>
           <Card
             emoji={reactLogo}
             heading="Frontend Skills"
             detail="HTML5, CSS3, SASS, TailwindCSS, ES6, ReactJS, NextJS, StorybookJS, TypeScript"
           />
-        </div>
-        <div style={{ top: '20rem', left: '15rem' }}>
+        </motion.div>
+        <motion.div
+          initial={{ top: '20rem', right: '1rem' }}
+          whileInView={{ top: '20rem', left: '15rem' }}
+          transition={transition}>
           <Card
             emoji={nodejs}
             heading="Backend Skills"
             detail="NodeJS, ExpressJS, MongoDB, MongooseJS, SanityIO, REST"
           />
-        </div>
-        <div style={{ top: '14rem', left: '-10rem' }}>
+        </motion.div>
+        <motion.div
+          initial={{ top: '14rem', left: '-5%' }}
+          whileInView={{ top: '14rem', left: '-10rem' }}
+          transition={transition}>
           <Card
             emoji={book}
             heading="Dev &amp; Design Tool "
             detail="Git, Github, Adobe Xd, Adobe Photoshop, Adobe Illustrator"
           />
-        </div>
+        </motion.div>
         <div
           className="exp-blur"
           style={{

@@ -57,11 +57,11 @@
   height: 3rem;
   margin-top: 2rem;
   text-align: center;
+  transition: all 0.4s ease;
 }
 
 .i-button:hover {
-  background: none;
-  color: #fb982f;
+  border-radius: 0;
 }
 
 .i-icons {
@@ -72,10 +72,12 @@
 
 .i-icons > * {
   transform: scale(0.5);
+  transition: all 0.4s ease;
 }
 
 .i-icons > *:hover {
   cursor: pointer;
+  transform: scale(0.6);
 }
 
 .i-right {

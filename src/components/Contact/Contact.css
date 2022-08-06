@@ -26,7 +26,7 @@
   text-align: justify;
   line-height: 1.5rem;
   margin-top: 2rem;
-  width: 25rem;
+  width: 22rem;
 }
 
 .c-right {
@@ -48,14 +48,22 @@
   height: 2rem;
   padding: 0.3em;
   outline: none;
-  border: 2px solid var(--orange);
+  border: 2px solid transparent;
   border-radius: 8px;
   font-size: 16px;
+  transition: all 0.4s ease;
 }
 
 textarea {
   height: 15rem !important;
   resize: none;
+}
+
+.user:nth-child(1):focus,
+.user:nth-child(2):focus,
+.user:nth-child(3):focus,
+.user:nth-child(4):focus {
+  border: 2px solid #fca61f;
 }
 
 .btn-submit {
@@ -70,20 +78,19 @@ textarea {
   background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
   width: 10rem;
   position: relative;
+  transition: all 0.4s ease;
 }
 
 .btn-submit:hover {
-  background: none;
-  color: #fb982f;
+  border-radius: 0;
 }
 
 .c-blur {
   position: absolute;
-  width: 22rem;
-  height: 14rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   background-color: rgb(245, 223, 196);
-  filter: blur(250px);
   z-index: -9;
   top: -18%;
   left: 56%;

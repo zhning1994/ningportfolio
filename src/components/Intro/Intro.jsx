@@ -13,8 +13,10 @@ import deeplearning from '../../images/deep-learning.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import WebDev from '../../images/online-lesson.png';
 import { themeContext } from '../../Context';
+import { motion } from 'framer-motion';
 
 const Intro = () => {
+  const transition = { duration: 2, type: 'spring' };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -62,13 +64,26 @@ const Intro = () => {
         <img src={Vector2} alt="vector2" />
         <img src={Vector3} alt="vector3" />
         <img src={boy} alt="boy" />
-        <img className="i-jsLogo" src={jsLogo} alt="JSLogo" />
-        <div style={{ top: '-4%', left: '58%' }}>
+        <motion.img
+          initial={{ left: '-36%' }}
+          whileInView={{ left: '-24%' }}
+          transition={transition}
+          className="i-jsLogo"
+          src={jsLogo}
+          alt="JSLogo"
+        />
+        <motion.div
+          initial={{ top: '-4%', left: '65%' }}
+          whileInView={{ top: '-4%', left: '58%' }}
+          transition={transition}>
           <FloatingDiv img={WebDev} text1="Frontend" text2="Development" />
-        </div>
-        <div style={{ top: '25rem', left: '7rem' }}>
+        </motion.div>
+        <motion.div
+          initial={{ top: '24rem', left: '13rem' }}
+          whileInView={{ top: '24rem', left: '7rem' }}
+          transition={transition}>
           <FloatingDiv img={deeplearning} text1="Backend" text2="Development" />
-        </div>
+        </motion.div>
         <div
           className="blur"
           style={{

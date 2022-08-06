@@ -71,9 +71,9 @@ const Contact = () => {
             className="c-blur"
             style={{
               background: 'rgba(245, 120, 47, 0.521)',
-              top: '10rem',
-              width: '21rem',
-              height: '11rem',
+              top: '5rem',
+              width: '24rem',
+              height: '16rem',
               left: '9rem',
             }}></div>
         </form>
