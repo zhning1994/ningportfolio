@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import { themeContext } from '../Context';
+import AboutMe from '../components/AboutMe/AboutMe';
 import './About.css';
 
 const About = () => {
@@ -13,6 +14,7 @@ const About = () => {
         background: darkMode ? '#242323' : '',
       }}>
       <Navbar />
+      <AboutMe />
     </div>
   );
 };
