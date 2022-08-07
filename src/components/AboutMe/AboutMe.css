@@ -75,44 +75,6 @@
   text-align: justify;
 }
 
-/* .about-2::after {
-  content: '';
-  position: absolute;
-  width: 750px;
-  height: 750px;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #169cf5
-  );
-  animation: animate 4s linear infinite;
-  animation-delay: -2s;
-}
-
-.about-2::before {
-  content: '';
-  position: absolute;
-  width: 750px;
-  height: 750px;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #eeb35a
-  );
-  animation: animate 4s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
-
 .about-2 > p {
   margin-bottom: 0.5rem;
   font-family: 'Lato', sans-serif;
