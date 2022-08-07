@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './Navbar.css';
 import Toggle from '../Toggle/Toggle';
 import { themeContext } from '../../Context';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const theme = useContext(themeContext);
@@ -10,7 +11,9 @@ const Navbar = () => {
     <div className="n-wrapper">
       <div className="n-left">
         <div style={{ color: darkMode ? '#93a397' : '' }} className="n-name">
-          Zhen Ning
+          <Link className="link" to="/">
+            Zhen Ning
+          </Link>
         </div>
         <span>
           <Toggle />
@@ -19,11 +22,21 @@ const Navbar = () => {
       <div className="n-right">
         <div className="n-list">
           <ul style={{ color: darkMode ? '#93a397' : '' }}>
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Experience</li>
-            <li>Portfolio</li>
-            <li>Future Studies</li>
+            <Link className="link" to="/">
+              <li>Home</li>
+            </Link>
+            <Link className="link" to="/about">
+              <li>About Me</li>
+            </Link>
+            <Link className="link" to="/experience">
+              <li>Experience</li>
+            </Link>
+            <Link className="link" to="/portfolio">
+              <li>Portfolio</li>
+            </Link>
+            <Link className="link" to="/future">
+              <li>Future Studies</li>
+            </Link>
           </ul>
         </div>
         <button className="btn-contact">Contact Me</button>
