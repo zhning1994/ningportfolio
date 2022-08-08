@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import { themeContext } from '../Context';
 import './Experience.css';
+import ExperienceMe from '../components/ExperienceMe/ExperienceMe';
 
 const Experience = () => {
   const theme = useContext(themeContext);
@@ -13,6 +14,7 @@ const Experience = () => {
         background: darkMode ? '#242323' : '',
       }}>
       <Navbar />
+      <ExperienceMe />
     </div>
   );
 };

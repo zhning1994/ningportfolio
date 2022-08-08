@@ -1,0 +1,129 @@
+.expMe {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  justify-content: space-around;
+}
+
+.expMe-lft {
+  flex: 1;
+  padding-right: 3rem;
+}
+
+.expMe-rgt {
+  flex: 1;
+}
+
+.expMe-lft > p {
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  line-height: 2rem;
+  color: #001e6c;
+}
+
+.expMe-lft > h2 {
+  color: #219ebc;
+}
+
+.expMe-rgt {
+  position: relative;
+}
+
+.expMe-skills {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.expMe-title {
+  display: block;
+  color: #001e6c;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.expMe-bar {
+  height: 19px;
+  width: 100%;
+  background-color: #e4dedea8;
+  margin-top: 6px;
+  border-radius: 10px;
+}
+
+.expMe-sec {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 60%;
+  border-radius: 10px;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+  text-align: center;
+  background-color: #f94144;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.expMe-sec.css {
+  width: 60%;
+  animation-delay: 0.1s;
+  background-color: #f3722c;
+}
+
+.expMe-sec.js {
+  width: 55%;
+  animation-delay: 0.2s;
+  background-color: #f8961e;
+}
+
+.expMe-sec.react {
+  width: 40%;
+  animation-delay: 0.3s;
+  background-color: #f9844a;
+}
+
+.expMe-sec.tailwind {
+  width: 35%;
+  animation-delay: 0.4s;
+  background-color: #f7c34c;
+}
+
+.expMe-sec.nextjs {
+  width: 25%;
+  animation-delay: 0.5s;
+  background-color: #90be6d;
+}
+
+.expMe-sec.nodejs {
+  width: 30%;
+  animation-delay: 0.6s;
+  background-color: #43aa8b;
+}
+
+.expMe-sec.typescript {
+  width: 15%;
+  animation-delay: 0.7s;
+  background-color: #4d908e;
+}
+
+.expMe-sec.story {
+  width: 10%;
+  animation-delay: 0.8s;
+  background-color: #577590;
+}
+
+.expMe-sec.xd {
+  width: 30%;
+  animation-delay: 0.9s;
+  background-color: #277da1;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
