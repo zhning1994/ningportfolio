@@ -65,7 +65,11 @@ const Contact = () => {
             placeholder="Subject"
           />
           <textarea name="message" className="user" placeholder="Message" />
-          <input type="submit" value="Send" className="btn-submit" />
+          <input
+            type="submit"
+            value="Send"
+            className={darkMode ? 'btn-submit-dark' : 'btn-submit'}
+          />
           <span>{done && 'Thanks for Contacting me'}</span>
           <div
             className="c-blur"

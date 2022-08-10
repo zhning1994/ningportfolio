@@ -6,11 +6,13 @@ import book from '../../images/book.png';
 import Card from '../Card/Card';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Experiences = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const transition = { duration: 3, type: 'spring' };
+  const navigate = useNavigate();
   return (
     <div className="skills ">
       <div className="skills-left">
@@ -24,7 +26,11 @@ const Experiences = () => {
           <br />
           Check out more details about my skills and experience.
         </span>
-        <button className="btn-skills">Experience Details</button>
+        <button
+          onClick={() => navigate('/experience')}
+          className={darkMode ? 'btn-skills-dark' : 'btn-skills'}>
+          Experience Details
+        </button>
         <div
           className="exp-blur"
           style={{

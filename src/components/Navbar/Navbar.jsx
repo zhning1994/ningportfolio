@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 import './Navbar.css';
 import Toggle from '../Toggle/Toggle';
 import { themeContext } from '../../Context';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const navigate = useNavigate();
   return (
     <div className="n-wrapper">
       <div className="n-left">
@@ -39,7 +40,11 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
-        <button className="btn-contact">Contact Me</button>
+        <button
+          onClick={() => navigate('/contact')}
+          className={darkMode ? 'btn-contact-dark' : 'btn-contact'}>
+          Contact Me
+        </button>
       </div>
     </div>
   );

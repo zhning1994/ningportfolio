@@ -14,11 +14,14 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import WebDev from '../../images/online-lesson.png';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Intro = () => {
   const transition = { duration: 2, type: 'spring' };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const navigate = useNavigate();
+
   return (
     <div className="intro">
       <div className="i-left">
@@ -31,7 +34,11 @@ const Intro = () => {
             my skills. Stay hungry, stay foolish.
           </span>
         </div>
-        <button className="i-button">Hire Me</button>
+        <button
+          onClick={() => navigate('/contact')}
+          className={darkMode ? 'i-button-dark' : 'i-button'}>
+          Hire Me
+        </button>
         <div className="i-icons">
           <a
             href="https://github.com/zhning1994"
