@@ -1,5 +1,4 @@
 .aboutme {
-  height: 89vh;
   display: flex;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -7,8 +6,8 @@
 }
 
 .aboutme-left > img {
-  height: 576px;
-  width: 432px;
+  max-height: 576px;
+  max-width: 432px;
 }
 
 .aboutme-left {
@@ -50,7 +49,8 @@
 }
 
 .aboutme-right {
-  width: 600px;
+  min-width: 460px;
+  margin-left: 3rem;
 }
 
 .about-1 {
@@ -63,7 +63,7 @@
 .about-1::after {
   content: '';
   display: block;
-  width: 20rem;
+  max-width: 50%;
   height: 1px;
   background-color: #219ebc;
   top: -20px;
@@ -80,4 +80,34 @@
   font-family: 'Lato', sans-serif;
   color: #57595f;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+  }
+
+  .aboutme-left > img {
+    height: 443px;
+    width: 332px;
+  }
+
+  .aboutme-left::before,
+  .aboutme-left::after {
+    height: 443px;
+    width: 332px;
+  }
+
+  .aboutme-right {
+    min-width: 300px;
+    margin-left: 0;
+  }
+
+  .about-1::after {
+    width: 40%;
+  }
 }
