@@ -1,0 +1,96 @@
+.futureme-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 40px;
+}
+
+.futureme-img {
+  position: relative;
+}
+
+.futureme-img > img {
+  height: 50px;
+}
+
+.futureme-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.futureme-card {
+  min-width: 300px;
+  height: 400px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+  position: relative;
+}
+
+.futureme-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #f4f2f7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.futureme-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+}
+
+.futureme-details > h3 {
+  position: absolute;
+  top: -5.5rem;
+  right: 30px;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.futureme-details > h4 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 2.6rem;
+  z-index: 1;
+  color: #727171;
+  transition: all 0.3s ease;
+}
+
+.futureme-details > p {
+  text-align: justify;
+  word-wrap: break-word;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  z-index: 1;
+  color: #727171;
+  transition: all 0.3s e;
+  min-height: 168px;
+}
+
+.futureme-card:hover .futureme-details h3 {
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.futureme-box:hover {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, rgb(247, 233, 199), #fad0a0);
+}
+
+.futureme-header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #219ebc;
+}
