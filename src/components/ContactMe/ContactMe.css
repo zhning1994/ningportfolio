@@ -1,0 +1,133 @@
+.contactMe {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  justify-content: space-around;
+}
+
+.contact-form-me {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 80vh;
+  margin-top: 4rem;
+  /* scroll */
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 1090px) {
+  .contact-form-me {
+    margin-top: 80vh;
+  }
+}
+
+.c-me-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-me-text > :nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fca61f;
+}
+
+.c-me-text > :nth-child(2) {
+  color: #001e6c;
+  font-weight: 400px;
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  width: 22rem;
+}
+
+.c-me-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+}
+
+.c-me-right > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.c-me-right .userme {
+  width: 30rem;
+  height: 2rem;
+  padding: 0.3em;
+  outline: none;
+  border: 2px solid #fca71f41;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  background-color: transparent;
+}
+
+textarea {
+  height: 15rem !important;
+  resize: none;
+}
+
+.userme:nth-child(1):focus,
+.userme:nth-child(2):focus,
+.userme:nth-child(3):focus,
+.userme:nth-child(4):focus {
+  border: 2px solid #fca61f;
+}
+
+.btn-contactme {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #faa307;
+  padding: 12px;
+  border-radius: 50px;
+  border: none;
+  background: #f4f2f7;
+  box-shadow: 3px 3px 4.5px #d9d9d9, -3px -3px 4.5px #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 10rem;
+  position: relative;
+}
+
+.btn-contactme:hover {
+  color: #0297dc;
+}
+
+.btn-contactme-dark {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #faa307;
+  padding: 12px;
+  border-radius: 50px;
+  border: none;
+  background: #242323;
+  box-shadow: 3px 3px 4.5px #272626, -3px -3px 4.5px #464343;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 10rem;
+  position: relative;
+}
+
+.btn-contactme-dark:hover {
+  color: #93a397;
+}
+
+.c-me-blur {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: rgb(245, 223, 196);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(165px);
+}
