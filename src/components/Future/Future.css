@@ -1,0 +1,168 @@
+.future {
+  height: 90vh;
+  margin-bottom: 13rem;
+  margin-top: 9rem;
+  display: grid;
+}
+
+.future-header > p:nth-child(1) {
+  color: #001e6c;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.future-header > p:nth-child(2) {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ffb703;
+  margin-top: 0;
+}
+
+.future-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
+  gap: 40px;
+}
+
+.future-card {
+  min-width: 200px;
+  min-height: 300px;
+}
+
+.future-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: absolute;
+  inset: 5px;
+  border-radius: 20px;
+  background-color: #f4f2f7;
+  z-index: 1;
+}
+
+.future-box {
+  min-width: 200px;
+  min-height: 300px;
+  background-color: #f4f2f7;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.future-box::before {
+  content: '';
+  position: absolute;
+  min-width: 310px;
+  min-height: 400px;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    #0eadf7a6
+  );
+  animation: animate 12s linear infinite;
+}
+
+.future-box::after {
+  content: '';
+  position: absolute;
+  min-width: 310px;
+  min-height: 400px;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    #f7cc0ed8
+  );
+  animation: animate 12s linear infinite;
+  animation-delay: -5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.future-details > h4 {
+  color: #001e6c;
+  text-align: center;
+}
+
+.future-details > p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #5f5f5f;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.future-img > img {
+  height: 50px;
+}
+
+.future-img {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-future {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #faa307;
+  padding: 12px;
+  border-radius: 50px;
+  border: none;
+  background: #f4f2f7;
+  box-shadow: 3px 3px 4.5px #d9d9d9, -3px -3px 4.5px #ffffff;
+  cursor: pointer;
+  width: 12rem;
+  margin-top: 4rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-future:hover {
+  color: #0297dc;
+}
+
+.btn-future-dark {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #faa307;
+  padding: 12px;
+  border-radius: 50px;
+  border: none;
+  background: #242323;
+  box-shadow: 3px 3px 4.5px #272626, -3px -3px 4.5px #464343;
+  cursor: pointer;
+  width: 12rem;
+  margin-top: 4rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-future-dark:hover {
+  color: #93a397;
+}
