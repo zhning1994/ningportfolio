@@ -73,7 +73,7 @@ const Intro = () => {
         <img src={boy} alt="boy" />
         <motion.img
           initial={{ left: '-36%' }}
-          whileInView={{ left: '-24%' }}
+          whileInView={{ left: '34%' }}
           transition={transition}
           className="i-jsLogo"
           src={jsLogo}
@@ -81,7 +81,7 @@ const Intro = () => {
         />
         <motion.div
           initial={{ top: '-4%', left: '65%' }}
-          whileInView={{ top: '-4%', left: '58%' }}
+          whileInView={{ top: '-4%', left: '-15%' }}
           transition={transition}>
           <FloatingDiv img={WebDev} text1="Frontend" text2="Development" />
         </motion.div>
@@ -96,6 +96,7 @@ const Intro = () => {
           style={{
             background: 'rgba(102, 176, 241, 0.2)',
             top: '3rem',
+            visibility: darkMode ? 'hidden' : 'visible',
           }}></div>
         <div
           className="blur"
@@ -105,6 +106,7 @@ const Intro = () => {
             width: '21rem',
             height: '11rem',
             left: '-9rem',
+            visibility: darkMode ? 'hidden' : 'visible',
           }}></div>
       </div>
     </div>
