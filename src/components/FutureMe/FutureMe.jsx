@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './FutureMe.css';
 import typescript from '../../images/typescript.png';
 import nextjs from '../../images/nextjs2.png';
@@ -8,17 +8,20 @@ import redux from '../../images/redux.png';
 import storybookjs from '../../images/storybook.png';
 import figma from '../../images/figma.png';
 import blockchain from '../../images/blockchain.png';
+import { themeContext } from '../../Context';
 
 const FutureMe = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="futureme">
       <div className="futureme-header">What I Am Going To Learn Next</div>
       <div className="futureme-cards">
-        <div className="futureme-card card1">
-          <div className="futureme-box">
+        <div className={darkMode ? 'futureme-card-dark' : 'futureme-card'}>
+          <div className={darkMode ? 'futureme-box-dark' : 'futureme-box'}>
             <div className="futureme-content">
               <div className="futureme-details">
-                <h3>01</h3>
+                <h3 style={{ color: darkMode ? '#7271711c' : '' }}>01</h3>
                 <h4>TypeScript</h4>
                 <p>
                   I have learnt about the fundamental of TypeScript, but still
@@ -33,11 +36,11 @@ const FutureMe = () => {
             </div>
           </div>
         </div>
-        <div className="futureme-card card1">
-          <div className="futureme-box">
+        <div className={darkMode ? 'futureme-card-dark' : 'futureme-card'}>
+          <div className={darkMode ? 'futureme-box-dark' : 'futureme-box'}>
             <div className="futureme-content">
               <div className="futureme-details">
-                <h3>02</h3>
+                <h3 style={{ color: darkMode ? '#7271711c' : '' }}>02</h3>
                 <h4>Next.js</h4>
                 <p>
                   Search engines can easily crawl web content before web page is
@@ -52,11 +55,11 @@ const FutureMe = () => {
             </div>
           </div>
         </div>
-        <div className="futureme-card card1">
-          <div className="futureme-box">
+        <div className={darkMode ? 'futureme-card-dark' : 'futureme-card'}>
+          <div className={darkMode ? 'futureme-box-dark' : 'futureme-box'}>
             <div className="futureme-content">
               <div className="futureme-details">
-                <h3>03</h3>
+                <h3 style={{ color: darkMode ? '#7271711c' : '' }}>03</h3>
                 <h4>Jest</h4>
                 <p>
                   Jest is a JavaScript testing framework, can be used to test
@@ -70,11 +73,11 @@ const FutureMe = () => {
             </div>
           </div>
         </div>
-        <div className="futureme-card card1">
-          <div className="futureme-box">
+        <div className={darkMode ? 'futureme-card-dark' : 'futureme-card'}>
+          <div className={darkMode ? 'futureme-box-dark' : 'futureme-box'}>
             <div className="futureme-content">
               <div className="futureme-details">
-                <h3>04</h3>
+                <h3 style={{ color: darkMode ? '#7271711c' : '' }}>04</h3>
                 <h4>Three.js</h4>
                 <p>
                   3D animation, objects and effect can be very creative and
@@ -89,11 +92,11 @@ const FutureMe = () => {
             </div>
           </div>
         </div>
-        <div className="futureme-card card1">
-          <div className="futureme-box">
+        <div className={darkMode ? 'futureme-card-dark' : 'futureme-card'}>
+          <div className={darkMode ? 'futureme-box-dark' : 'futureme-box'}>
             <div className="futureme-content">
               <div className="futureme-details">
-                <h3>05</h3>
+                <h3 style={{ color: darkMode ? '#7271711c' : '' }}>05</h3>
                 <h4>Redux</h4>
                 <p>
                   Have basic understanding of Redux, but not familiar with Redux
@@ -108,11 +111,11 @@ const FutureMe = () => {
             </div>
           </div>
         </div>
-        <div className="futureme-card card1">
-          <div className="futureme-box">
+        <div className={darkMode ? 'futureme-card-dark' : 'futureme-card'}>
+          <div className={darkMode ? 'futureme-box-dark' : 'futureme-box'}>
             <div className="futureme-content">
               <div className="futureme-details">
-                <h3>06</h3>
+                <h3 style={{ color: darkMode ? '#7271711c' : '' }}>06</h3>
                 <h4>Storybook.js</h4>
                 <p>
                   This is an eye-opener for me, developing each component
@@ -127,11 +130,11 @@ const FutureMe = () => {
             </div>
           </div>
         </div>
-        <div className="futureme-card card1">
-          <div className="futureme-box">
+        <div className={darkMode ? 'futureme-card-dark' : 'futureme-card'}>
+          <div className={darkMode ? 'futureme-box-dark' : 'futureme-box'}>
             <div className="futureme-content">
               <div className="futureme-details">
-                <h3>07</h3>
+                <h3 style={{ color: darkMode ? '#7271711c' : '' }}>07</h3>
                 <h4>Figma</h4>
                 <p>
                   I have used Adobe Xd before, it is easy to use. The different
@@ -146,11 +149,11 @@ const FutureMe = () => {
             </div>
           </div>
         </div>
-        <div className="futureme-card card1">
-          <div className="futureme-box">
+        <div className={darkMode ? 'futureme-card-dark' : 'futureme-card'}>
+          <div className={darkMode ? 'futureme-box-dark' : 'futureme-box'}>
             <div className="futureme-content">
               <div className="futureme-details">
-                <h3>08</h3>
+                <h3 style={{ color: darkMode ? '#7271711c' : '' }}>08</h3>
                 <h4>Blockchain</h4>
                 <p>
                   Before exploring Web 3.0, I would like to know what exactly is
