@@ -15,7 +15,13 @@ const AboutMe = () => {
         whileInView={{ left: '0rem' }}
         transition={transition}
         className="aboutme-left">
-        <img src={me} alt="zhenning" />
+        <img
+          src={me}
+          alt="zhenning"
+          loading="lazy"
+          width="432px"
+          height="576px"
+        />
       </motion.div>
       <div className="aboutme-right">
         <p className="about-1">About Me</p>
