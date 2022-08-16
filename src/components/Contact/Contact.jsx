@@ -79,6 +79,7 @@ const Contact = () => {
               width: '24rem',
               height: '16rem',
               left: '9rem',
+              visibility: darkMode ? 'hidden' : 'visible',
             }}></div>
         </form>
       </div>
