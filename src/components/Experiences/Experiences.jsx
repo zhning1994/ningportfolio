@@ -39,6 +39,7 @@ const Experiences = () => {
             width: '21rem',
             height: '11rem',
             left: '9rem',
+            visibility: darkMode ? 'hidden' : 'visible',
           }}></div>
       </div>
       <div className="skills-right">
@@ -80,6 +81,7 @@ const Experiences = () => {
             width: '21rem',
             height: '11rem',
             left: '15rem',
+            visibility: darkMode ? 'hidden' : 'visible',
           }}></div>
       </div>
     </div>
