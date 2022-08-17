@@ -51,20 +51,28 @@ const ContactMe = () => {
             name="user_name"
             className="userme"
             placeholder="Name"
+            required
           />
           <input
             type="email"
             name="user_email"
             className="userme"
             placeholder="Email"
+            required
           />
           <input
             type="text"
             name="user_subject"
             className="userme"
             placeholder="Subject"
+            required
           />
-          <textarea name="message" className="userme" placeholder="Message" />
+          <textarea
+            name="message"
+            className="userme"
+            placeholder="Message"
+            required
+          />
           <input
             type="submit"
             value="Send"
