@@ -35,6 +35,10 @@
   color: #001e6c;
 }
 
+.n-list > ul .link > li {
+  color: #001e6c;
+}
+
 @media screen and (max-width: 1286px) {
   .n-list > ul {
     font-size: 1rem;
