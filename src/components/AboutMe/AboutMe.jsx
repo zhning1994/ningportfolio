@@ -11,8 +11,8 @@ const AboutMe = () => {
   return (
     <div className="aboutme">
       <motion.div
-        initial={{ left: '-11rem' }}
-        whileInView={{ left: '0rem' }}
+        initial={{ opacity: 0, left: '-11rem' }}
+        whileInView={{ opacity: 1, left: '0rem' }}
         transition={transition}
         className="aboutme-left">
         <img
