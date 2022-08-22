@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# FriChat - Real Time Chat App With Socket.io
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hi 👋, I'm Low Zhen Ning
+========================
 
-## Available Scripts
+### A catechumen who just start to exploring tech development world
 
-In the project directory, you can run:
+🌱 I’m currently learning React.js, React Native, Docker and more. 
 
-### `npm start`
+📫 How to reach me : 
+- Email : lowzn94@gmail.com
+- Facebook : https://www.facebook.com/laurence.low.3/
+- LinkedIn : https://www.linkedin.com/in/zhen-ning-low/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Purpose of Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Real time chat apps has been using in our daily life, such as WhatsApp, Messenger etc. Most of the web apps or mobile apps will have real time chat functions, it is the faster and convenience way to communicate with each other besides email. Therefore, I decided to create a chat app which I can use it with my friends, gossiping about some fancy things. 
 
-### `npm test`
+**Socket.io** will be used for creating real time chat app. This is the first time I used Socket, it is complicated at first, but after looking some tutorial, I am more familiar with socket after all. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This chat app is completed, but I have facing some problem when deploying to Heroku, so currently still figure other ways to deploy this app, but this project can be cloned and installed, I have attached .env file, so would not have any problem when download at other machines.
 
-### `npm run build`
+## Layout of Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![ChatLogin](https://user-images.githubusercontent.com/60384726/181742780-cc0d0349-4558-4d34-b5d6-dcf6f4a61e01.PNG)
+![AfterLogin](https://user-images.githubusercontent.com/60384726/181742804-693f59f6-c77c-4449-a36b-82d4be838e99.PNG)
+![ChatContainer](https://user-images.githubusercontent.com/60384726/181742818-eb09b85d-47d6-4483-a1cb-62c06a6648a2.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Details of projects : 
+- Source Code : https://github.com/zhning1994/real-time-chat
 
-### `npm run eject`
+## :rocket: Tools and Technologies For Project
+- socket.io
+- emoji-picker-react (user able to send emoji)
+- https://api.multiavatar.com/45678945 (for setting profile avatar)
+- JavaScript & React.js 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Run This Project Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. git clone https://github.com/zhning1994/real-time-chat.git
+2. go to client folder, npm install
+3. go to server folder, npm install
+4. go to server folder, npm start (run server at port 5000)
+5. go to client folder, npm start (run at http://localhost:3000/login)
+6. create account 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Special Thanks to Credits
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Thank you ***Kishan Sheth*** ! Thank you Kishan for sharing his knowledge of socket.io ! He explained the process of project in details, big thumb for him :hearts: 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I learn a lot from his channel, here is the link : https://www.youtube.com/c/KishanSheth21
