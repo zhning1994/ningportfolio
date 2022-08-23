@@ -1,4 +1,4 @@
-# Jupiter - Nextjs E-commerce apps 
+# My Portfolio - React.js
 
 ## Hi 👋, I'm Low Zhen Ning
 ========================
@@ -30,8 +30,8 @@ Build another Next.js E-commerce apps again would be my next step, and setup the
 ![OrderDetails](https://user-images.githubusercontent.com/60384726/181482110-59b3053b-37c0-494f-ba9a-6f00382324a0.PNG)
 
 Details of projects : 
-- Source Code : https://github.com/zhning1994/next-mongodb-ecommerce
-- Demo : https://jupiter-nextjs-ecommerce.vercel.app/
+- Source Code : https://github.com/zhning1994/ningportfolio
+- Demo : https://www.lowzhenning.com/
 
 ## :rocket: Tools and Technologies For Project
 - Next.js
