@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# My Portfolio - React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hi 👋, I'm Low Zhen Ning
+========================
 
-## Available Scripts
+### A freshman who just start to exploring tech development world
 
-In the project directory, you can run:
+🌱 I’m currently learning React.js, React Native, Docker and more. 
 
-### `npm start`
+📫 How to reach me : 
+- Email : lowzn94@gmail.com
+- Facebook : https://www.facebook.com/laurence.low.3/
+- LinkedIn : https://www.linkedin.com/in/zhen-ning-low/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Purpose of Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I noticed that people in React community talk about Next.js, and I have seen many Tech YouTuber talk about it. Next.Js has been praised about its faster development advantage, SEO-friendly as Next.js using SSR(server-side rendering), image optimization, etc. 
 
-### `npm test`
+So I would like have to try to build an E-commerce project using Next.js, therefore I can explore more about this framework. Besides that, I am keen to know how an E-commerce web would be setup in real world, from frontend customer interacting page, admin pages to allow admin customize the product and seing report of sales, to serverside and database setup.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+By doing this project, its not only enchance my knowledge of Next.js, React.js. Web apps authentication can be very confused, with the help of NextAuth.js,saving token, let user stay login, all the issue has been solved. Paypal paying method is used in this project. Payment method setting could be complicated, but successfully setup in the end.
 
-### `npm run build`
+Build another Next.js E-commerce apps again would be my next step, and setup the paying method using Stripe together with Paypal, different UI design would be tried.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Layout of Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Home](https://user-images.githubusercontent.com/60384726/181482094-3187f777-b608-4b48-a733-44613ec74340.PNG)
+![Product](https://user-images.githubusercontent.com/60384726/181482102-f7eb450a-7d91-405d-b1af-9c432ee4aa3c.PNG)
+![Dashboard](https://user-images.githubusercontent.com/60384726/181482106-6615edb0-1868-49f3-8bda-5287f1e9ad86.PNG)
+![OrderDetails](https://user-images.githubusercontent.com/60384726/181482110-59b3053b-37c0-494f-ba9a-6f00382324a0.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Details of projects : 
+- Source Code : https://github.com/zhning1994/ningportfolio
+- Demo : https://www.lowzhenning.com/
 
-### `npm run eject`
+## :rocket: Tools and Technologies For Project
+- Next.js
+- Tailwind Css (I would say it is a shortcut to write CSS, it would be more easy if you understanding plain CSS3)
+- NextAuth.js (for authentication)
+- MongoDB & Mongoose (saving info on database)
+- PayPal (payment method)
+- Cloudinary (upload and save project image on cloud)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Use the Project
+There are two roles for this project : **customer** and **admin**.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- For using this apps as customer, using following info to login or can create a new account :
+  - email : user@example.com , password : 123456
+- For using this apps as admin, using following info to login :
+  - email : admin@example.com , password : 123456
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Special Thanks to Credits
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Thank you ***Bassir Jafarzadeh***! I following his tutorial to build this project. I am so appreciate that he willing to share all his knowledge with everyone on the world. :hearts: 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I learn a lot from his channel, here is the link : https://www.youtube.com/c/CodingwithBasir
