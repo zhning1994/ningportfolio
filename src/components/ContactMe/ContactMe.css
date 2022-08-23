@@ -131,3 +131,19 @@ textarea {
   left: 56%;
   filter: blur(165px);
 }
+
+.c-me-right > form > input::placeholder,
+.c-me-right > form > textarea::placeholder {
+  color: #dba758ad;
+  transition: all 0.3s ease;
+}
+
+.c-me-right > form > input:focus::placeholder,
+.c-me-right > form > textarea:focus::placeholder {
+  color: transparent;
+}
+
+.c-me-right > form > input:focus::placeholder,
+.c-me-right > form > textarea:focus::placeholder {
+  color: transparent;
+}

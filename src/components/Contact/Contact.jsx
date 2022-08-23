@@ -52,6 +52,7 @@ const Contact = () => {
             className="user"
             placeholder="Name"
             required
+            style={{ color: darkMode ? '#93a397' : '' }}
           />
           <input
             type="email"
@@ -59,6 +60,7 @@ const Contact = () => {
             className="user"
             placeholder="Email"
             required
+            style={{ color: darkMode ? '#93a397' : '' }}
           />
           <input
             type="text"
@@ -66,12 +68,14 @@ const Contact = () => {
             className="user"
             placeholder="Subject"
             required
+            style={{ color: darkMode ? '#93a397' : '' }}
           />
           <textarea
             name="message"
             className="user"
             placeholder="Message"
             required
+            style={{ color: darkMode ? '#93a397' : '' }}
           />
           <input
             type="submit"
