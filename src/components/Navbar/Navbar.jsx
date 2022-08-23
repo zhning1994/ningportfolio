@@ -22,21 +22,23 @@ const Navbar = () => {
       </div>
       <div className="n-right">
         <div className="n-list">
-          <ul style={{ color: darkMode ? '#93a397' : '' }}>
+          <ul>
             <Link className="link" to="/">
-              <li>Home</li>
+              <li style={{ color: darkMode ? '#93a397' : '' }}>Home</li>
             </Link>
             <Link className="link" to="/about">
-              <li>About Me</li>
+              <li style={{ color: darkMode ? '#93a397' : '' }}>About Me</li>
             </Link>
             <Link className="link" to="/experience">
-              <li>Experience</li>
+              <li style={{ color: darkMode ? '#93a397' : '' }}>Experience</li>
             </Link>
             <Link className="link" to="/portfolio">
-              <li>Portfolio</li>
+              <li style={{ color: darkMode ? '#93a397' : '' }}>Portfolio</li>
             </Link>
             <Link className="link" to="/future">
-              <li>Future Studies</li>
+              <li style={{ color: darkMode ? '#93a397' : '' }}>
+                Future Studies
+              </li>
             </Link>
           </ul>
         </div>
