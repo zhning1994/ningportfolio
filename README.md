@@ -1,4 +1,4 @@
-# My Portfolio - React.js
+# Jupiter - Nextjs E-commerce apps 
 
 ## Hi 👋, I'm Low Zhen Ning
 ========================
@@ -14,39 +14,43 @@
 
 ## Purpose of Project
 
-Real time chat apps has been using in our daily life, such as WhatsApp, Messenger etc. Most of the web apps or mobile apps will have real time chat functions, it is the faster and convenience way to communicate with each other besides email. Therefore, I decided to create a chat app which I can use it with my friends, gossiping about some fancy things. 
+I noticed that people in React community talk about Next.js, and I have seen many Tech YouTuber talk about it. Next.Js has been praised about its faster development advantage, SEO-friendly as Next.js using SSR(server-side rendering), image optimization, etc. 
 
-**Socket.io** will be used for creating real time chat app. This is the first time I used Socket, it is complicated at first, but after looking some tutorial, I am more familiar with socket after all. 
+So I would like have to try to build an E-commerce project using Next.js, therefore I can explore more about this framework. Besides that, I am keen to know how an E-commerce web would be setup in real world, from frontend customer interacting page, admin pages to allow admin customize the product and seing report of sales, to serverside and database setup.
 
-This chat app is completed, but I have facing some problem when deploying to Heroku, so currently still figure other ways to deploy this app, but this project can be cloned and installed, I have attached .env file, so would not have any problem when download at other machines.
+By doing this project, its not only enchance my knowledge of Next.js, React.js. Web apps authentication can be very confused, with the help of NextAuth.js,saving token, let user stay login, all the issue has been solved. Paypal paying method is used in this project. Payment method setting could be complicated, but successfully setup in the end.
+
+Build another Next.js E-commerce apps again would be my next step, and setup the paying method using Stripe together with Paypal, different UI design would be tried.
 
 ## Layout of Project
 
-![ChatLogin](https://user-images.githubusercontent.com/60384726/181742780-cc0d0349-4558-4d34-b5d6-dcf6f4a61e01.PNG)
-![AfterLogin](https://user-images.githubusercontent.com/60384726/181742804-693f59f6-c77c-4449-a36b-82d4be838e99.PNG)
-![ChatContainer](https://user-images.githubusercontent.com/60384726/181742818-eb09b85d-47d6-4483-a1cb-62c06a6648a2.PNG)
-
+![Home](https://user-images.githubusercontent.com/60384726/181482094-3187f777-b608-4b48-a733-44613ec74340.PNG)
+![Product](https://user-images.githubusercontent.com/60384726/181482102-f7eb450a-7d91-405d-b1af-9c432ee4aa3c.PNG)
+![Dashboard](https://user-images.githubusercontent.com/60384726/181482106-6615edb0-1868-49f3-8bda-5287f1e9ad86.PNG)
+![OrderDetails](https://user-images.githubusercontent.com/60384726/181482110-59b3053b-37c0-494f-ba9a-6f00382324a0.PNG)
 
 Details of projects : 
-- Source Code : https://github.com/zhning1994/real-time-chat
+- Source Code : https://github.com/zhning1994/next-mongodb-ecommerce
+- Demo : https://jupiter-nextjs-ecommerce.vercel.app/
 
 ## :rocket: Tools and Technologies For Project
-- socket.io
-- emoji-picker-react (user able to send emoji)
-- https://api.multiavatar.com/45678945 (for setting profile avatar)
-- JavaScript & React.js 
+- Next.js
+- Tailwind Css (I would say it is a shortcut to write CSS, it would be more easy if you understanding plain CSS3)
+- NextAuth.js (for authentication)
+- MongoDB & Mongoose (saving info on database)
+- PayPal (payment method)
+- Cloudinary (upload and save project image on cloud)
 
-## Run This Project Locally
+## How to Use the Project
+There are two roles for this project : **customer** and **admin**.
 
-1. git clone https://github.com/zhning1994/real-time-chat.git
-2. go to client folder, npm install
-3. go to server folder, npm install
-4. go to server folder, npm start (run server at port 5000)
-5. go to client folder, npm start (run at http://localhost:3000/login)
-6. create account 
+- For using this apps as customer, using following info to login or can create a new account :
+  - email : user@example.com , password : 123456
+- For using this apps as admin, using following info to login :
+  - email : admin@example.com , password : 123456
 
 ## Special Thanks to Credits
 
-Thank you ***Kishan Sheth*** ! Thank you Kishan for sharing his knowledge of socket.io ! He explained the process of project in details, big thumb for him :hearts: 
+Thank you ***Bassir Jafarzadeh***! I following his tutorial to build this project. I am so appreciate that he willing to share all his knowledge with everyone on the world. :hearts: 
 
-I learn a lot from his channel, here is the link : https://www.youtube.com/c/KishanSheth21
+I learn a lot from his channel, here is the link : https://www.youtube.com/c/CodingwithBasir
