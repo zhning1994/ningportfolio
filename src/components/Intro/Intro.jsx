@@ -89,7 +89,11 @@ const Intro = () => {
           initial={{ top: '24rem', left: '13rem' }}
           whileInView={{ top: '24rem', left: '7rem' }}
           transition={transition}>
-          <FloatingDiv img={deeplearning} text1="Backend" text2="Development" />
+          <FloatingDiv
+            img={deeplearning}
+            text1="Graphic &"
+            text2="UI/UX Design"
+          />
         </motion.div>
         <div
           className="blur"

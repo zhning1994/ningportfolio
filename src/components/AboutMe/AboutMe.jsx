@@ -32,16 +32,17 @@ const AboutMe = () => {
           </p>
           <p style={{ color: darkMode ? '#93a397' : '' }}>
             Back in 2018, my friend had introduced Udemy to me as I keen to
-            learn some IT related skills. Udemy features web development
-            courses, programming languages as top courses, I take a web
-            development course to give it a try. And this course is a real
+            learn some IT and design related skills. Udemy features web
+            development courses, programming languages as top courses, I take a
+            web development course to give it a try. And this course is a real
             eye-opener for me. User interface effects, animation, dynamic and
             interactive web design can be so much fun.
           </p>
           <p style={{ color: darkMode ? '#93a397' : '' }}>
             I keep learning everyday, and becoming more and more interested in
-            frontend development. Now, I am on the road to become a frontend
-            developer, it is difficult for me but never give up.
+            frontend development, graphic design and user interface design. Now,
+            I am on the road to become an frontend designer, it is difficult for
+            me but never give up.
           </p>
         </div>
       </div>

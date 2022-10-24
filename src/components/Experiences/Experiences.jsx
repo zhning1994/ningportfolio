@@ -20,8 +20,8 @@ const Experiences = () => {
         <span style={{ color: darkMode ? '#93a397' : '' }}>
           I have learnt HTML5, CSS3, ES6, Adobe Xd, Next.js and many more in
           these few year in self-taught way, whether it is about frontend
-          development fundamental, backend database setup, or user interface
-          design tools.
+          development fundamental, backend database setup, or graphic and user
+          interface design tools.
           <br />
           <br />
           Check out more details about my skills and experience.

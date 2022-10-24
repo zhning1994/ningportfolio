@@ -13,7 +13,8 @@ const ExperienceMe = () => {
           I put more effort in frontend development since I am interested in
           creating elegrant, amusing user interface effect, animation,
           responsive layout structure. And besides that, as a beginner, frontend
-          would be more easier to get started.
+          would be more easier to get started. And my experienced in fundamental
+          graphic design have helped me in understanding design concept.
         </p>
         <p style={{ color: darkMode ? 'white' : '' }}>
           In order to build fullstack web apps, backend development will be
@@ -107,20 +108,20 @@ const ExperienceMe = () => {
           <span
             style={{ color: darkMode ? '#93a397' : '' }}
             className="expMe-title">
-            TypeScript
+            Adobe Photoshop
           </span>
           <div className="expMe-bar">
-            <span className="expMe-sec typescript">15%</span>
+            <span className="expMe-sec typescript">55%</span>
           </div>
         </div>
         <div className="expMe-skills">
           <span
             style={{ color: darkMode ? '#93a397' : '' }}
             className="expMe-title">
-            StoryBookJs
+            Adobe Illustrator
           </span>
           <div className="expMe-bar">
-            <span className="expMe-sec story">10%</span>
+            <span className="expMe-sec story">50%</span>
           </div>
         </div>
         <div className="expMe-skills">
